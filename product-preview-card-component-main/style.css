@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(https://fonts.google.com/specimen/Montserrat);
+  font-weight: 500, 700;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url(https://fonts.google.com/specimen/Fraunces);
+}
+
+:root {
+  --color-dark-cyan: hsl(158, 36%, 37%);
+  --color-darker-cyan: hsl(158, 36%, 21%);
+  --color-cream: hsl(30, 38%, 92%);
+  --color-dark-blue: hsl(212, 21%, 14%);
+  --color-dark-grayish-blue: hsl(228, 12%, 48%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+/* BASIC RESET */
+
+html {
+  font-size: 14px;
+  font-family: Montserrat, Fraunces, sans-serif;
+  color: var(--color-dark-blue);
+  background-color: var(--color-cream);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* CARD STYLES */
+
+body {
+  padding-inline: 0.5rem;
+}
+
+.product-card {
+  background-color: var(--color-white);
+  max-width: 65rem;
+  margin: 6rem auto 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.product-image img {
+  max-width: 100%;
+}
+
+.product-info .container {
+  padding: 3rem;
+  display: flex;
+  /* align-items: flex-start; */
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.product-info {
+  font-size: 1.2rem;
+}
+
+.product-type {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  color: var(--color-dark-grayish-blue);
+  font-weight: 500;
+}
+
+.product-title {
+  font-family: montserrat;
+  font-size: 2.5rem;
+}
+
+.product-description {
+  line-height: 1.4;
+  color: var(--color-dark-grayish-blue);
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product-price .current-price {
+  font-family: Montserrat;
+  font-size: 3rem;
+  color: var(--color-dark-cyan);
+  font-weight: 700;
+}
+
+.product-price .previous-price {
+  font-family: 0.2rem;
+  text-decoration: line-through;
+  color: var(--color-dark-grayish-blue);
+}
+
+.btn {
+  border: none;
+  padding: 1rem 1.6rem;
+}
+
+.add-product {
+  background-color: var(--color-dark-cyan);
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.add-product:hover {
+  background-color: var(--color-darker-cyan);
+}
+
+.add-product span {
+  margin-right: 1rem;
+}
+
+.add-product::before {
+  content: "";
+  background: url(./images/icon-cart.svg);
+  background-position: center;
+  background-repeat: none;
+}
+
+@media (max-width: 375px) {
+  .product-card {
+    grid-template-columns: 1fr;
+  }
+}
