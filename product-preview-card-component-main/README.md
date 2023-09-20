@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot](./screenshot_wide_two.png)
+![screenshot](./screenshot_wide_final.png)
 
 ### Links
 
@@ -43,19 +43,30 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- Responsive Design
 
 ### What I learned
 
 - played a little bit with aspect ratio
 - using `@font-face` to add fonts
+- image stretching
 
-To see how you can add code snippets, see below:
+importing a font
 
 ```css
 @font-face {
   font-family: "Montserrat";
   src: url(https://fonts.google.com/specimen/Montserrat);
   font-weight: 500, 700;
+}
+```
+
+image will have a dynamic and will cover 100% of the container
+
+```css
+img {
+  width: 100%;
+  height: 100%;
 }
 ```
 
