@@ -63,7 +63,6 @@ To see how you can add code snippets, see below:
 
 #### Issues
 
-- height of the card
 - small details (font-sizes, weight, padding ...)
 
 #### I want to learn more about this things
