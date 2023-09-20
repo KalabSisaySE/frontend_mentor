@@ -44,6 +44,7 @@ body {
 .product-card {
   background-color: var(--color-white);
   max-width: 65rem;
+  height: 470px;
   margin: 6rem auto 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
