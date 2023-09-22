@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot](./screenshot_wide_final.png)
+![screenshot](./assets/screenshot_wide_final.png)
 
 ### Links
 
